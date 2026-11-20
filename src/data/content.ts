@@ -18,79 +18,63 @@ export type Experience = {
 };
 
 export const content = {
-  name: "Your Name", // TODO: replace
-  role: "Full-Stack Developer", // TODO: replace
-  tagline: "I build fast, useful web products.", // TODO: replace
-  location: "Delhi, India", // TODO: replace
+  name: "Yug Bharti",
+  role: "Backend Engineer",
+  tagline: "I engineer high-concurrency backends, AI systems, and real-time platforms — built to scale.",
+  location: "Delhi, India",
   about: [
-    "I'm a full-stack developer who loves turning ideas into polished, production-ready products. I care about clean code, great UX, and shipping fast.", // TODO: replace
-    "When I'm not coding, you'll find me exploring open-source projects, reading about system design, or experimenting with new technologies.", // TODO: replace
+    "I'm a backend engineer who obsesses over distributed systems, correctness under load, and clean API design. I love taking hard concurrency and reliability problems — the kind that break naive implementations — and solving them at the database and architecture level.",
+    "When I'm not building, I'm reading about system design, contributing to open source, or exploring how AI agents can be composed into real products.",
   ],
-  resumeUrl: "/resume.pdf", // TODO: replace with actual resume
+  resumeUrl: "/resume.pdf",
   socials: {
-    github: "https://github.com/yourname", // TODO: replace
-    linkedin: "https://linkedin.com/in/yourname", // TODO: replace
-    email: "you@example.com", // TODO: replace
-    twitter: "", // TODO: replace or leave blank
+    github: "https://github.com/Yugbharti",
+    linkedin: "https://www.linkedin.com/in/yug-bharti-3b0b242a1/",
+    email: "yugbharti3@gmail.com",
+    twitter: "",
   },
   skills: [
     { category: "Languages", items: ["TypeScript", "Python", "JavaScript", "SQL"] },
-    { category: "Frontend", items: ["React", "Next.js", "Tailwind CSS", "HTML/CSS"] },
-    { category: "Backend", items: ["Node.js", "Express", "PostgreSQL", "REST APIs"] },
-    { category: "Tools", items: ["Git", "Docker", "Vercel", "VS Code", "Linux"] },
+    { category: "Backend", items: ["Node.js", "Express", "Fastify", "FastAPI", "Socket.IO", "BullMQ"] },
+    { category: "Data & Infra", items: ["PostgreSQL", "Redis", "Prisma", "Docker", "Turbo"] },
+    { category: "AI & Frontend", items: ["LangGraph", "LangChain", "Gemini", "React", "Next.js", "Tailwind CSS"] },
   ] as SkillGroup[],
   projects: [
     {
-      title: "Project Alpha", // TODO: replace
-      description: "A full-stack SaaS app that helps teams track tasks in real time. Reduced onboarding time by 40% with an intuitive drag-and-drop interface.", // TODO: replace
-      tech: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
-      image: "/projects/alpha.png", // TODO: add image or remove
-      liveUrl: "https://example.com", // TODO: replace
-      repoUrl: "https://github.com/yourname/alpha", // TODO: replace
+      title: "RailGrid",
+      description: "High-concurrency, zero-double-booking rail reservation engine inspired by IRCTC's Tatkal scale. Uses PostgreSQL btree_gist exclusion constraints, SKIP LOCKED seat selection, and a cryptographic idempotency engine to guarantee mathematical correctness even under thousands of simultaneous booking requests.",
+      tech: ["TypeScript", "Fastify", "PostgreSQL", "Redis", "BullMQ", "Next.js", "Turbo"],
+      repoUrl: "https://github.com/Yugbharti/RailGrid",
       featured: true,
     },
     {
-      title: "Project Beta", // TODO: replace
-      description: "An open-source CLI tool that automates boilerplate generation for Node.js APIs. Used by 500+ developers on GitHub.", // TODO: replace
-      tech: ["Node.js", "TypeScript", "Shell"],
-      repoUrl: "https://github.com/yourname/beta", // TODO: replace
+      title: "Neural Arbiter",
+      description: "Multi-agent AI debate system where Google Gemini and Groq Llama 3 argue opposite sides of any topic while a third LLM judges every exchange — scoring credibility, detecting logical fallacies, and streaming a live verdict. Built for the Protex Hackathon.",
+      tech: ["Python", "FastAPI", "LangGraph", "Gemini", "Groq", "React", "WebSockets"],
+      repoUrl: "https://github.com/Yugbharti/Neural-Arbiter",
       featured: true,
     },
     {
-      title: "Project Gamma", // TODO: replace
-      description: "A data visualization dashboard for e-commerce analytics. Built with server-side rendering for sub-second load times.", // TODO: replace
-      tech: ["React", "Python", "FastAPI", "Chart.js"],
-      liveUrl: "https://example.com", // TODO: replace
-      repoUrl: "https://github.com/yourname/gamma", // TODO: replace
+      title: "unAlone",
+      description: "Location-based social platform for finding nearby people planning to hang out. Features JWT auth, OTP phone verification, geolocation-driven hangout posts, a request & match system, and real-time chat powered by Socket.IO and Redis pub/sub.",
+      tech: ["Node.js", "Express", "PostgreSQL", "Redis", "Socket.IO", "Prisma", "Next.js", "Twilio"],
+      repoUrl: "https://github.com/Yugbharti/unalone",
+      featured: true,
+    },
+    {
+      title: "Finora AI",
+      description: "AI-powered personal finance SaaS — tracks spending, forecasts budgets, and surfaces actionable insights using LLM-driven analysis. Built with a focus on clean API design and fast, reliable data pipelines.",
+      tech: ["Node.js", "TypeScript", "PostgreSQL", "Gemini API", "Next.js"],
+      repoUrl: "https://github.com/Yugbharti/Finora-AI",
       featured: false,
     },
     {
-      title: "Project Delta", // TODO: replace
-      description: "A mobile-first PWA for event discovery and RSVP management. Supports offline mode and push notifications.", // TODO: replace
-      tech: ["Next.js", "Tailwind CSS", "Supabase"],
-      liveUrl: "https://example.com", // TODO: replace
+      title: "Cliento AI",
+      description: "AI-native CRM and client management platform. Automates follow-ups, summarises client interactions using LLMs, and surfaces priority actions so teams can focus on closing rather than tracking.",
+      tech: ["Node.js", "TypeScript", "PostgreSQL", "LangChain", "React"],
+      repoUrl: "https://github.com/Yugbharti/cliento-ai",
       featured: false,
     },
   ] as Project[],
-  experience: [
-    {
-      role: "Software Engineer Intern", // TODO: replace
-      org: "Acme Corp", // TODO: replace
-      period: "May 2024 – Aug 2024", // TODO: replace
-      points: [
-        "Built a React dashboard that cut customer support tickets by 25%.", // TODO: replace
-        "Improved API response times by 30% by optimising PostgreSQL queries.", // TODO: replace
-        "Shipped 3 features end-to-end in a 2-week sprint cycle.", // TODO: replace
-      ],
-    },
-    {
-      role: "B.Tech Computer Science", // TODO: replace
-      org: "University Name", // TODO: replace
-      period: "2022 – 2026", // TODO: replace
-      points: [
-        "CGPA 8.5/10. Relevant coursework: DSA, OS, DBMS, Computer Networks.", // TODO: replace
-        "Core team member of the college coding club; organised 3 hackathons.", // TODO: replace
-      ],
-    },
-  ] as Experience[],
+  experience: [] as Experience[],
 };

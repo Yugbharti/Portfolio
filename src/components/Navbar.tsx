@@ -8,7 +8,6 @@ const links = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -20,7 +19,7 @@ export default function Navbar() {
       <nav className="max-w-5xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14">
         {/* Logo */}
         <a href="#hero" className="font-bold text-lg tracking-tight">
-          YN<span className="text-indigo-500">.</span>
+          YB<span className="text-indigo-500">.</span>
         </a>
 
         {/* Desktop links */}
